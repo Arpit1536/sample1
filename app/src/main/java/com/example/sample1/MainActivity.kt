@@ -24,6 +24,11 @@ class MainActivity : ComponentActivity() {
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+                    Greeting1(
+                        name = "Android",
+                        modifier = Modifier.padding(innerPadding)
+                    )
+
                 }
             }
         }
@@ -32,6 +37,13 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+@Composable
+fun Greeting1(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
